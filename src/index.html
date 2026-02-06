@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HSTR Gallery</title>
+  <script>
+    if (navigator.userAgent.indexOf("Firefox") > -1) {
+      document.getElementsByName('viewport')[0].content="width=device-width, initial-scale=0.85, viewport-fit=cover";
+    }
+  </script>
+  <link href="/assets/hstr-gallery.css" rel="stylesheet">
+</head>
+<body class="bg-gray-300">
+
+  <div class="max-w-screen-md mx-auto">
+
+    <h1 class="text-3xl font-bold underline mb-6">
+      HSTR Gallery!
+    </h1>
+
+    <div class="flex flex-wrap gap-4">
+      <a href="/static/img/01.jpg" ><img src="/static/img/thumbs/01.jpg" class="h-32 rounded" alt="Desc 1"/></a>
+      <a href="/static/img/02.jpg" ><img src="/static/img/thumbs/02.jpg" class="h-32 rounded" alt="Desc 2"/></a>
+      <a href="/static/img/03.jpg" ><img src="/static/img/thumbs/03.jpg" class="h-32 rounded" alt="Desc 3"/></a>
+      <a href="/static/img/04.jpg" ><img src="/static/img/thumbs/04.jpg" class="h-32 rounded" alt="Desc 4"/></a>
+      <a href="/static/img/05.jpg" ><img src="/static/img/thumbs/05.jpg" class="h-32 rounded" alt="Desc 5"/></a>
+      <a href="/static/img/06.jpg" ><img src="/static/img/thumbs/06.jpg" class="h-32 rounded" alt="Desc 6"/></a>
+      <a href="/static/img/07.jpg" ><img src="/static/img/thumbs/07.jpg" class="h-32 rounded" alt="Desc 7"/></a>
+      <a href="/static/img/08.jpg" ><img src="/static/img/thumbs/08.jpg" class="h-32 rounded" alt="Desc 8"/></a>
+      <a href="/static/img/09.jpg" ><img src="/static/img/thumbs/09.jpg" class="h-32 rounded" alt="Desc 9"/></a>
+    </div>
+
+  </div>
+  <div class="swiper-container hide" id="swiper-container" >
+    <div class="swiperGallery" id="swiperGallery">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+      </div>
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <div class="swiper-container__close" id="swiper-close">
+      <svg width="48" height="48" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="Icon/close">
+          <path id="Path" d="M2.78431 2.08859L2.85355 2.14645L8 7.293L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0271 2.32001 14.0464 2.58944 13.9114 2.78431L13.8536 2.85355L8.707 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.68 14.0271 13.4106 14.0464 13.2157 13.9114L13.1464 13.8536L8 8.707L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.97288 13.68 1.9536 13.4106 2.08859 13.2157L2.14645 13.1464L7.293 8L2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.32001 1.97288 2.58944 1.9536 2.78431 2.08859Z" fill="#ffffff"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <script src="/assets/hstr-gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+
+/* ===== wiper-containery ===== */
+
+.swiper-container {
+    @apply fixed inset-0 flex items-center justify-center z-50 overflow-hidden;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.swiper-container.hide {
+    @apply opacity-0 -z-10;
+}
+
+.swiper-container.show {
+    @apply opacity-100 z-[50] transition-opacity duration-200 ease-in-out;
+}
+
+.swiper-container__close {
+    @apply absolute right-[8px] top-[8px] w-[40px] h-[40px] z-[1] cursor-pointer transition-transform duration-400;
+    transform: rotate(0deg);
+}
+
+.swiper-container__close > svg{
+    @apply w-full h-full;
+}
+
+.swiper-container__close:hover {
+    transform: rotate(90deg);
+}
+
+
+/* ===== Swiper core ===== */
+
+.swiperGallery{
+    @apply w-full h-full;
+}
+
+
+
+.swiperGallery .swiper {
+    @apply h-full overflow-hidden;
+}
+
+.swiperGallery .swiper-button-next,
+.swiperGallery .swiper-button-prev {
+    @apply text-white h-10;
+}
+
+
+/* ===== Slides ===== */
+
+.swiperGallery .swiper-slide {
+    @apply text-center;
+    font-size: 28px;
+    padding: 1rem 0;
+}
+
+/* ===== Image visibility logic ===== */
+
+.swiperGallery .swiper-slide > .swiper-zoom-container > img {
+    @apply hidden;
+}
+
+.swiperGallery .swiper-slide.swiper-slide-prev > .swiper-zoom-container > img,
+.swiperGallery .swiper-slide.swiper-slide-active > .swiper-zoom-container > img,
+.swiperGallery .swiper-slide.swiper-slide-next > .swiper-zoom-container > img {
+    display: unset;
+}
+
+/* ===== Pagination ===== */
+
+.swiperGallery .swiper-pagination {
+    @apply text-white bottom-0;
+    text-shadow: 0 0 2px black;
+}
+
+/* ===== Zoom container ===== */
+
+.swiperGallery .swiper-zoom-container {
+    @apply flex items-center justify-center h-full;
+}
+
+.swiperGallery .swiper-zoom-container img {
+    @apply mx-auto max-h-full object-contain;
+}
+
+/* ===== Slide text ===== */
+
+.swiperGallery .swiper-slide-text {
+    @apply absolute right-0 left-0 text-white;
+    bottom: 3rem;
+    line-height: 1.1;
+    text-shadow: 0 0 2px black;
+    padding: 10px 0;
+    font-size: 1rem;
+}

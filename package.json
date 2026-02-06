@@ -1,0 +1,39 @@
+{
+  "name": "hstr-gallery",
+  "version": "1.0.0",
+  "description": "Simple modal gallery",
+  "keywords": [
+    "modal",
+    "gallery"
+  ],
+  "license": "MIT",
+  "author": "Alexander Dolzhenkov",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --hot",
+    "build": "set NODE_ENV=production&& webpack"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.3",
+    "@tailwindcss/postcss": "^4.1.14",
+    "autoprefixer": "^10.4.22",
+    "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.1",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.4",
+    "mini-css-extract-plugin": "^2.9.4",
+    "postcss": "^8.5.6",
+    "postcss-loader": "^8.2.0",
+    "postcss-preset-env": "^10.4.0",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^4.1.14",
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  },
+  "dependencies": {
+    "swiper": "^12.0.3"
+  }
+}
